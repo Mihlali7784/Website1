@@ -1,0 +1,47 @@
+﻿@model DragonBallZ.Models.ZFighters
+
+<form method="post" asp-action="Delete">
+    <input asp-for="ID" hidden />
+    <div class="border p-3">
+        <div class="form-group row">
+            <h2 class="text-black-50 pl-3">Delete ZFighers</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label asp-for="Name"></label>
+                    </div>
+                    <div class="col-6">
+                        <label asp-for="Race"></label>
+                    </div>
+                    <div class="col-6">
+                        <label asp-for="Age"></label>
+                    </div>
+                    <div class="col-6">
+                        <label asp-for="Abilities"></label>
+                    </div>
+                    <div class="col-6">
+                        <label asp-for="Weakness"></label>
+                    </div>
+
+                </div>
+               
+
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-2 row">
+                    <div class="col">
+                        <input type="submit" class="btn btn-danger w-75" value="Delete" />
+                    </div>
+                    <div class="col">
+                        <a asp-action="Index" class="btn btn-success w-75">Back</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</form>
+
